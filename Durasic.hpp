@@ -10,8 +10,6 @@
 using namespace std;
 
 int countFiles(string sPath);
-template<class InputIterator, class T>
-InputIterator findSong (InputIterator first, InputIterator last, const string& val);
 
 class musicListener {
     public:

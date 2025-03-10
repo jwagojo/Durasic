@@ -8,27 +8,6 @@ int countFiles(string sPath) {
     return i;
 }
 
-template<class InputIterator>
-InputIterator findSong(InputIterator first, InputIterator last, const string& val)
-{
-  while (first!=last) {
-    if (first->title==val) return first;
-    ++first;
-  }
-  return last;
-}
-
-template <class InputIterator, class T>
-  int countSong(InputIterator first, InputIterator last, const string& val)
-{
-  int ret = 0;
-  while (first!=last) {
-    if (first->a == val) ++ret;
-    ++first;
-  }
-  return ret;
-}
-
 musicListener::musicListener() {
     songs = vector<song>();
     artists = vector<artist>();
@@ -50,11 +29,6 @@ istream& operator>>(istream& in, musicListener& listener) {
         string artistName = songData["artistName"];
         string trackName = songData["trackName"];
         double msPlayed = songData["msPlayed"];
-        if(countSong(listener.songs.begin(), listener.songs.end(), trackName)) {
-            
-        }else {
-            listener.addSong(song(trackName, artistName, msPlayed, stoi(endTime.substr(0, 4))));
-        }
     }
     return in;
 }
