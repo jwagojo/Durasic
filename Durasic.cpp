@@ -8,6 +8,10 @@ int countFiles(string sPath) {
     return i;
 }
 
+bool uniqueSong(song nSong, string nTitle, string nArtist) {
+    return nSong.getTitle() == nTitle && nSong.getArtist() == nArtist;
+}
+
 musicListener::musicListener() {
     songs = vector<song>();
     artists = vector<artist>();
@@ -29,6 +33,15 @@ istream& operator>>(istream& in, musicListener& listener) {
         string artistName = songData["artistName"];
         string trackName = songData["trackName"];
         double msPlayed = songData["msPlayed"];
+        pair<string, string> tSong = make_pair(trackName, artistName);
+        if(find_if(listener.songs.begin(), listener.songs.end(), [&tSong](const song& nSong) {
+            return uniqueSong(nSong, tSong.first, tSong.second);
+        }) != listener.songs.end()) {
+            
+        } else {
+            
+        }
+        
     }
     return in;
 }
