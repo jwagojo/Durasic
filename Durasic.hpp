@@ -11,22 +11,24 @@
 using namespace std;
 
 int countFiles(string sPath);
+class musicListener;
+class song;
+class artist;
 
-
-class artist {
+class musicListener {
     public:
-        artist(string nName);
-        string getName();
-        double getSeconds();
+        musicListener();
+        musicListener(string sHistory);
         void addSong(song nSong);
-        void updateSeconds(double nSeconds);
-        void updatesong();
+        void addArtist(artist nArtist);
+        vector<song>& getSongs();
+        friend void getSongMinutes(musicListener listener);
+        friend istream& operator>>(istream& in, musicListener& listener);
+        friend void print_Sorted(musicListener listener);
     private:
-        string name;
         vector<song> songs;
-        double seconds;
+        vector<artist> artists;
 };
-
 
 class song {
     public:
@@ -47,17 +49,17 @@ class song {
         double seconds;
 };
 
-class musicListener {
+
+class artist {
     public:
-        musicListener();
-        musicListener(string sHistory);
-        void addSong(song nSong);
-        //void addArtist(artist nArtist);
-        vector<song>& getSongs();
-        friend void getSongMinutes(musicListener listener);
-        friend istream& operator>>(istream& in, musicListener& listener);
-        friend void print_Sorted(musicListener listener);
+        artist(string nName);
+        string getName();
+        double getSeconds();
+        //void addSong(song nSong);
+        void updateSeconds(double nSeconds);
+        void updatesong();
     private:
-        vector<song> songs;
-        //vector<artist> artists;
+        string name;
+        //vector<song> songs;
+        double seconds;
 };

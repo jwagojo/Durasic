@@ -30,6 +30,10 @@ vector<song>& musicListener::getSongs() {
     return songs;
 }
 
+void musicListener::addArtist(artist nArtist) {
+    artists.push_back(nArtist);
+}
+
 istream& operator>>(istream& in, musicListener& listener) {
     nlohmann::json jsonData;
     in >> jsonData;
@@ -43,6 +47,15 @@ istream& operator>>(istream& in, musicListener& listener) {
         auto iSong = find_if(listener.songs.begin(), listener.songs.end(), [tSong](song nSong) {
             return uniqueSong(nSong, tSong.first, tSong.second);
         });
+        auto iArtist = find_if(listener.artists.begin(), listener.artists.end(), [artistName](artist nArtist) {
+            return nArtist.getName() == artistName;
+        });
+        if(iArtist != listener.artists.end()) {
+            iArtist->updateSeconds(secondsPlayed);
+        } else {
+            listener.addArtist(artist(artistName));
+            listener.artists.back().updateSeconds(secondsPlayed);
+        }
         if(iSong != listener.songs.end()) {
             iSong->updateSeconds(secondsPlayed);
         } else {
@@ -96,12 +109,26 @@ void print_Sorted(musicListener listener) {
     sort(listener.getSongs().begin(), listener.getSongs().end(), [](song a, song b) {
         return a.getSeconds() > b.getSeconds();
     });
+    sort(listener.artists.begin(), listener.artists.end(), [](artist a, artist b) {
+        return a.getSeconds() > b.getSeconds();
+    });
     cout << endl;
+    cout << "Top 10 Songs:" << endl;
     for(auto& List : listener.songs) {
         if(counter == 11) {
             break;
         }
         cout << counter << ". " << List.getTitle() << " by " << List.getArtist() << " (" << List.getSeconds()/60 << " minutes played)" << endl << endl;
+        counter++;
+    }
+    cout << endl;
+    cout << "Top 10 Artists:" << endl;
+    counter = 1;
+    for(auto& List : listener.artists) {
+        if(counter == 11) {
+            break;
+        }
+        cout << counter << ". " << List.getName() << " (" << List.getSeconds()/60 << " minutes played)" << endl << endl;
         counter++;
     }
 }
@@ -124,5 +151,21 @@ void getSongMinutes(musicListener listener) {
         cout << endl << iSong->getTitle() << " by " << iSong->getArtist() << " (" << iSong->getSeconds()/60 << " minutes played)" << endl << endl;
     };    
 }
+artist::artist(string nName) {
+    name = nName;
+    seconds = 0;
+}
+string artist::getName() {
+    return name;
+}
+double artist::getSeconds() {
+    return seconds;
+}
+void artist::updateSeconds(double nSeconds) {
+    seconds += nSeconds;
+}
+
+
+
 
 
