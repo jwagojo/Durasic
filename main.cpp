@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Durasic.hpp"
+#include "sSort.hpp"
 using namespace std;
 
 int main(int argc, char* argv[]) {
