@@ -1,0 +1,153 @@
+{
+  "tracks": [
+    {
+      "artist": "Moodring",
+      "album": "Stargazer",
+      "track": "Xeno (Foreign Love)",
+      "uri": "spotify:track:3ygTuvrmEI0gZiwZtrrJrb"
+    },
+    {
+      "artist": "Loathe",
+      "album": "I Let It in and It Took Everything",
+      "track": "I Let It in and It Took Everything...",
+      "uri": "spotify:track:09fDemXgXzRReTfb7UWxjD"
+    },
+    {
+      "artist": "Loathe",
+      "album": "I Let It in and It Took Everything",
+      "track": "Screaming",
+      "uri": "spotify:track:611WshW3yQKLCQ2pTCOii4"
+    },
+    {
+      "artist": "The Raven Age",
+      "album": "Conspiracy",
+      "track": "Seventh Heaven",
+      "uri": "spotify:track:6uezTmjjKJLMxc7G786BGS"
+    },
+    {
+      "artist": "Deftones",
+      "album": "White Pony",
+      "track": "Change (In the House of Flies)",
+      "uri": "spotify:track:51c94ac31swyDQj9B3Lzs3"
+    },
+    {
+      "artist": "Loathe",
+      "album": "I Let It in and It Took Everything",
+      "track": "A Sad Cartoon",
+      "uri": "spotify:track:2fyDWKsx5904KnZMGllmAv"
+    },
+    {
+      "artist": "Hail The Sun",
+      "album": "Wake",
+      "track": "Rolling Out the Red Carpet",
+      "uri": "spotify:track:5ShA1hnZOOtZZHiObVtrzT"
+    },
+    {
+      "artist": "Deftones",
+      "album": "Koi No Yokan",
+      "track": "Tempest",
+      "uri": "spotify:track:1parffUcsk8pfGbyMtGnmW"
+    },
+    {
+      "artist": "Radiohead",
+      "album": "The Bends",
+      "track": "(Nice Dream)",
+      "uri": "spotify:track:1tZcw7GtIqviL32bzaKdSo"
+    },
+    {
+      "artist": "Loathe",
+      "album": "I Let It in and It Took Everything",
+      "track": "Is It Really You?",
+      "uri": "spotify:track:4OmlsAT8r4q9vPFBvfYgyZ"
+    },
+    {
+      "artist": "Deftones",
+      "album": "Around the Fur",
+      "track": "Be Quiet and Drive (Far Away)",
+      "uri": "spotify:track:4Uiw0Sl9yskBaC6P4DcdVD"
+    },
+    {
+      "artist": "Thornhill",
+      "album": "Heroine",
+      "track": "Arkangel",
+      "uri": "spotify:track:5Hs3FaBdK1GtuxLUGnn4Jo"
+    },
+    {
+      "artist": "Saosin",
+      "album": "Saosin",
+      "track": "It's Far Better To Learn",
+      "uri": "spotify:track:0nQcyybXeatlDXgvQOrT1n"
+    },
+    {
+      "artist": "Hail The Sun",
+      "album": "New Age Filth",
+      "track": "Hysteriantics",
+      "uri": "spotify:track:6fPWemqpvfiuJI3fLS4htn"
+    },
+    {
+      "artist": "My Chemical Romance",
+      "album": "Three Cheers for Sweet Revenge",
+      "track": "The Ghost of You",
+      "uri": "spotify:track:1yKAqZoi8xWGLCf5vajroL"
+    },
+    {
+      "artist": "Thornhill",
+      "album": "Heroine",
+      "track": "The Hellfire Club",
+      "uri": "spotify:track:1nfYsIo0DJUBsNeWEyMD1x"
+    },
+    {
+      "artist": "Deftones",
+      "album": "Saturday Night Wrist",
+      "track": "Beware",
+      "uri": "spotify:track:2ASygm7048ssav4ekbehPS"
+    },
+    {
+      "artist": "Deftones",
+      "album": "Diamond Eyes",
+      "track": "Diamond Eyes",
+      "uri": "spotify:track:1FdU4oF88UOJwA9GYgognx"
+    },
+    {
+      "artist": "Thornhill",
+      "album": "Viper Room",
+      "track": "Viper Room",
+      "uri": "spotify:track:4h7cu0LWpvr2sOhBWWsNkJ"
+    },
+    {
+      "artist": "grentperez",
+      "album": "Clementine",
+      "track": "Clementine",
+      "uri": "spotify:track:377JgyibsyYZ1NEF9aa1ZZ"
+    },
+    {
+      "artist": "Loathe",
+      "album": "The Cold Sun",
+      "track": "Babylon...",
+      "uri": "spotify:track:08on2wzs5D8ccY4oRrMR7G"
+    }
+  ],
+  "albums": [
+    {
+      "artist": "On Froy",
+      "album": "Love",
+      "uri": "spotify:album:6ro7ulvNrrGDDj4uvkwBrG"
+    }
+  ],
+  "shows": [
+  ],
+  "episodes": [
+  ],
+  "bannedTracks": [
+  ],
+  "artists": [
+  ],
+  "bannedArtists": [
+    {
+      "name": "Hojean",
+      "uri": "spotify:artist:0ENnerFBtqPaVUcHadXU2w"
+    }
+  ],
+  "other": [
+  ]
+}

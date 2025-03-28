@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = --std=c++20 -Wall -Werror -pedantic -g
 # Your .hpp files
-DEPS = Durasic.hpp 
+DEPS = Durasic.hpp
 # Your compiled .o files
 OBJECTS = Durasic.o
 # The name of your program
